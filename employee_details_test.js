@@ -38,6 +38,6 @@ describe('Salary creation Form', () => {
   });
 
   test('Must match the snapshot', () => {
-    expect(EmployeeDetails.toJSON()).toMatchSnapshot();
+    expect(employeeDetails.toJSON()).toMatchSnapshot();
   });
 });
