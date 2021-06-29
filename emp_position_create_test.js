@@ -7,7 +7,7 @@ import empPositionCreateForm from 'src/views/admin/EmpPositionCreateForm';
 
 const mockStore = configureStore([]);
 
-describe('Admin Employee position data screen', () => {
+describe('Employee position creation', () => {
   let store;
   let adminPortalPositionForm;
 
