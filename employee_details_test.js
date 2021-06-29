@@ -7,7 +7,7 @@ import employeeDetails from 'src/views/hr/EmployeeDetails';
 
 const mockStore = configureStore([]);
 
-describe('Salary creation Form', () => {
+describe('Employee Details ', () => {
   let store;
   let employeeDetails;
 
