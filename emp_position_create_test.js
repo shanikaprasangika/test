@@ -30,6 +30,6 @@ describe('Employee position creation', () => {
   });
 
   test('Must match the snapshot', () => {
-    expect(EmpPositionCreateForm.toJSON()).toMatchSnapshot();
+    expect(empPositionCreateForm.toJSON()).toMatchSnapshot();
   });
 });
