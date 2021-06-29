@@ -1,8 +1,9 @@
+
 import React from 'react';
 import {Provider} from 'react-redux';
 import configureStore from 'redux-mock-store';
 import renderer from 'react-test-renderer';
-import adminPortalPositionForm from 'src/views/admin/AdminPortalPositionForm';
+import applyLeave from 'src/views/emp/ApplyLeave';
 
 const mockStore = configureStore([]);
 
@@ -11,8 +12,8 @@ describe('Admin Employee position data screen', () => {
   let adminPortalPositionForm;
 
   const data = {
-   employee_name = "shanika",
-   position = "software engineer"
+   employee_name : 'shanika',
+   position : "software engineer"
   };
 
   const locale = 'en';
@@ -21,14 +22,14 @@ describe('Admin Employee position data screen', () => {
 
   beforeEach(() => {
     store = mockStore({app: props});
-    adminPortalPositionForm = renderer.create(
+    applyLeave = renderer.create(
       <Provider store={store}>
-        <AdminPortalPositionForm {...props} />
+        <ApplyLeave {...props} />
       </Provider>
     );
   });
 
   test('Must match the snapshot', () => {
-    expect(adminPortalPositionForm.toJSON()).toMatchSnapshot();
+    expect(applyLeave.toJSON()).toMatchSnapshot();
   });
 });
