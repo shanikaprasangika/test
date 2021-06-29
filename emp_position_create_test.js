@@ -3,7 +3,7 @@ import React from 'react';
 import {Provider} from 'react-redux';
 import configureStore from 'redux-mock-store';
 import renderer from 'react-test-renderer';
-import applyLeave from 'src/views/emp/ApplyLeave';
+import empPositionCreateForm from 'src/views/emp/EmpPositionCreateForm';
 
 const mockStore = configureStore([]);
 
@@ -22,14 +22,14 @@ describe('Admin Employee position data screen', () => {
 
   beforeEach(() => {
     store = mockStore({app: props});
-    applyLeave = renderer.create(
+    empPositionCreateForm = renderer.create(
       <Provider store={store}>
-        <ApplyLeave {...props} />
+        <EmpPositionCreateForm {...props} />
       </Provider>
     );
   });
 
   test('Must match the snapshot', () => {
-    expect(applyLeave.toJSON()).toMatchSnapshot();
+    expect(EmpPositionCreateForm.toJSON()).toMatchSnapshot();
   });
 });
