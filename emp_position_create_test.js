@@ -9,7 +9,7 @@ const mockStore = configureStore([]);
 
 describe('Employee position creation', () => {
   let store;
-  let adminPortalPositionForm;
+  let empPositionCreateForm;
 
   const data = {
    employee_name : 'shanika',
