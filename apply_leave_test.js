@@ -7,9 +7,9 @@ import applyLeave from 'src/views/emp/ApplyLeave';
 
 const mockStore = configureStore([]);
 
-describe('Apply leave data screen', () => {
+describe('Apply leave form', () => {
   let store;
-  let adminPortalPositionForm;
+  let applyLeave;
 
   const data = {
    emp_nu: 0012,
