@@ -12,8 +12,12 @@ describe('Apply leave data screen', () => {
   let adminPortalPositionForm;
 
   const data = {
-   employee_name : 'shanika',
-   position : "software engineer"
+   emp_nu: 0012,
+   leave_type : 'sick leave',
+   from_date : "2018-07-01",
+   to_date : "2018-07-02",
+   leave_status : 'Pending'
+    
   };
 
   const locale = 'en';
